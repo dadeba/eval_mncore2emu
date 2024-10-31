@@ -1,0 +1,937 @@
+imm i"2147483647" $r4/1000
+imm i"-1" $r5/1000
+imm i"1127219200" $r0/1000
+land $lm0v $lr4 $lr8v $ls0v
+zero $ls8/1000
+imm i"1071931184" $r16/1000
+imm i"1841940611" $r17/1000
+imm i"1071644672" $n64/1000
+imm i"0" $n65/1000
+imm i"0" $r1/1000
+nop
+dvpassa $ln64 $nowrite; lpassa $lr16 $nowrite; l1bmd $ls0v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite; imm i"52" $lr20/1000
+dftoi $mauf $lr40v $ls12v
+imm i"1048575" $r24/1000
+lsub $ls8 $lr40v $nowrite
+lmax $lr40v $aluf $ls0v
+imm i"-1" $r25/1000
+ullsr $ls0v $lr20 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $ls20v; imm i"-2147483648" $r28/1000
+land $ls0v $lr24 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $nowrite; imm i"0" $r29/1000
+dvpassa $mauf $nowrite; lpassa $lr0 $nowrite; l1bmd $ls20v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v
+land $ls12v $lr28 $nowrite
+lor $lr40v $aluf $ls20v $lm64v
+imm i"-1131305434" $r32/1000
+imm i"856972295" $r33/1000
+imm i"-1101983564" $r36/1000
+imm i"1610612736" $r37/1000
+imm i"-1074191877" $s0/1000
+imm i"1342177280" $s1/1000
+nop
+dvpassa $lr8v $nowrite; lpassa $ls0 $nowrite; l1bmd $lm64v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr36 $nowrite; l1bmd $ls20v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr32 $nowrite; l1bmd $ls20v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v $ls28v
+nop
+dvpassa $lr40v $nowrite; lpassa $lr40v $nowrite; l1bmd $lr40v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr8v $lm64v
+nop
+dvpassa $lr8v $nowrite; lpassa $lr8v $nowrite; l1bmd $lr8v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls20v
+imm i"1038473469" $s4/1000
+dvpassa $ls20v $nowrite; lpassa $ls20v $nowrite; l1bmd $ls20v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr52v; imm i"533830861" $s5/1000
+imm i"-1101339163" $r48/1000
+imm i"-1456922787" $r49/1000
+nop
+dvpassa $lr48 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls4 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls44v; imm i"-1077586603" $r60/1000
+imm i"1065423121" $s36/1000
+imm i"286324688" $s37/1000
+imm i"1431655752" $r61/1000
+imm i"1053236707" $s40/1000
+dvpassa $lr60 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls36 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite; imm i"1451051169" $s41/1000
+dvpassa $mauf $nowrite; lpassa $lr52v $nowrite; l1bmd $ls44v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr72v
+imm i"-1087766112" $r64/1000
+imm i"432004867" $r65/1000
+imm i"0" $r68/1000
+dvpassa $lr64 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls40 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite; imm i"1" $r69/1000
+dvpassa $lr72v $nowrite; lpassa $ls20v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls20v; land $ls12v $lr68 $omr1
+dvpassa $lr8v $nowrite; lpassa $ls28v $nowrite; l1bmd $lr8v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr40v $nowrite; lpassa $ls20v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v
+dvpassa $lr8v $nowrite; lpassa $lr8v $nowrite; l1bmd $lr8v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls24v
+imm i"-1112999351" $s20/1000
+dvpassa $ls24v $nowrite; lpassa $ls24v $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr72v; imm i"-1601824101" $s21/1000
+imm i"1042411165" $r52/1000
+imm i"2068725509" $r53/1000
+nop
+dvpassa $lr52 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls20 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls48v; imm i"1067799893" $r56/1000
+dvpassa $lr8v $nowrite; lpassa $lr8v $nowrite; l1bmd $lr8v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls60v; imm i"1431655755" $r57/1000
+land $lm8v $lr4 $lr84v $ls68v
+imm i"-1084833428" $s32/1000
+dvpassa $ln64 $nowrite; lpassa $lr16 $nowrite; l1bmd $ls68v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite; imm i"381767569" $s33/1000
+dftoi $mauf $lr92v $ls76v
+dvpassa $lr56 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls32 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite; land $ls76v $lr68 $omr2
+dvpassa $mauf $nowrite; lpassa $lr72v $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr100v; lsub $ls8 $lr92v $nowrite
+lmax $lr92v $aluf $ls48v
+imm i"-1097695665" $s44/1000
+ullsr $ls48v $lr20 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $ls68v; imm i"1056571808" $r80/1000
+land $ls48v $lr24 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $nowrite; imm i"2125220806" $s45/1000
+dvpassa $mauf $nowrite; lpassa $lr0 $nowrite; l1bmd $ls68v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr72v
+land $ls76v $lr28 $nowrite
+lor $lr72v $aluf $ls48v $lm72v
+imm i"432555253" $r81/1000
+imm i"-1075838976" $s56/1000
+dvpassa $lr84v $nowrite; lpassa $ls0 $nowrite; l1bmd $lm72v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite; imm i"0" $s57/1000
+dvpassa $mauf $nowrite; lpassa $lr36 $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite; imm i"1072693248" $r8/1000
+dvpassa $mauf $nowrite; lpassa $lr32 $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr72v $ls68v
+dvpassa $lr80 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls44 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite; imm i"0" $r9/1000
+dvpassa $lr100v $nowrite; lpassa $ls24v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr92v $lm72v
+imm i"0" $r12/1000
+dvpassa $lr92v $nowrite; lpassa $lr92v $nowrite; l1bmd $lr92v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls24v
+dvpassa $lr48 $nowrite; lpassa $lm72v $nowrite; l1bmd $ls4 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls48v
+dvpassa $ls24v $nowrite; lpassa $ls24v $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr100v
+dvpassa $lr60 $nowrite; lpassa $lm72v $nowrite; l1bmd $ls36 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite; imm i"2" $r13/1000
+dvpassa $mauf $nowrite; lpassa $lr100v $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr108v; ladd $ls12v $lr68 $nowrite
+land $aluf $lr12 $omr3
+ladd $ls76v $lr68 $nowrite
+land $aluf $lr12 $omr4
+dvpassa $lr64 $nowrite; lpassa $lm72v $nowrite; l1bmd $ls40 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr108v $nowrite; lpassa $ls24v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr92v $nowrite; lpassa $ls68v $nowrite; l1bmd $lr92v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr72v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr72v
+dvpassa $lr92v $nowrite; lpassa $lr92v $nowrite; l1bmd $lr92v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr52 $nowrite; lpassa $lm72v $nowrite; l1bmd $ls20 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls24v
+dvpassa $ls12v $nowrite; lpassa $ls12v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr100v
+dvpassa $lr56 $nowrite; lpassa $lm72v $nowrite; l1bmd $ls32 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr100v $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr108v
+dvpassa $lr80 $nowrite; lpassa $lm72v $nowrite; l1bmd $ls44 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr108v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr100v
+dvpassa $lr92v $nowrite; lpassa $lr92v $nowrite; l1bmd $lr92v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+land $lm16v $lr4 $lr92v $ls24v
+dvpassa $lr8 $nowrite; lpassa $ls56 $nowrite; l1bmd $lm64v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls60v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v/$imr1
+dvpassa $ln64 $nowrite; lpassa $lr16 $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa -$lr40v $ln0v; dftoi $mauf $lr84v $ls48v
+dvpassa $lr8 $nowrite; lpassa $ls56 $nowrite; l1bmd $lm72v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite; land $ls48v $lr68 $omr1
+dvpassa $mauf $nowrite; lpassa $lr100v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr72v/$imr2; ladd $ls48v $lr68 $nowrite
+land $aluf $lr12 $omr2
+lsub $ls8 $lr84v $nowrite
+lmax $lr84v $aluf $ls12v
+lpassa $lr40v $ln0v/$imr3
+ullsr $ls12v $lr20 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $ls24v
+land $ls12v $lr24 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $nowrite
+dvpassa $mauf $nowrite; lpassa $lr0 $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v
+land $ls48v $lr28 $nowrite
+lor $lr40v $aluf $ls12v $lm64v
+dvpassa -$lr72v $ln8v
+lpassa $lr72v $ln8v/$imr4
+dvpassa $lr92v $nowrite; lpassa $ls0 $nowrite; l1bmd $lm64v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr36 $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr32 $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v $ls24v
+nop
+dvpassa $lr40v $nowrite; lpassa $lr40v $nowrite; l1bmd $lr40v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr72v $lm64v
+nop
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr48 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls4 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls48v
+dvpassa $ls12v $nowrite; lpassa $ls12v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr60 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls36 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr92v
+dvpassa $lr64 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls40 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr92v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr72v $nowrite; lpassa $ls24v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr40v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr52 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls20 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls24v
+dvpassa $ls12v $nowrite; lpassa $ls12v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr56 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls32 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr92v
+dvpassa $lr80 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls44 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr92v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+land $lm24v $lr4 $lr72v $ls24v
+dvpassa $lr8 $nowrite; lpassa $ls56 $nowrite; l1bmd $lm64v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v/$imr1
+dvpassa $ln64 $nowrite; lpassa $lr16 $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa -$lr40v $ln16v; dftoi $mauf $lr84v $ls12v
+lpassa $lr40v $ln16v/$imr2
+land $ls12v $lr68 $omr1
+ladd $ls12v $lr68 $nowrite
+land $aluf $lr12 $omr2
+lsub $ls8 $lr84v $nowrite
+lmax $lr84v $aluf $ls24v
+nop
+ullsr $ls24v $lr20 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $ls48v
+land $ls24v $lr24 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $nowrite
+dvpassa $mauf $nowrite; lpassa $lr0 $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v
+land $ls12v $lr28 $nowrite
+lor $lr40v $aluf $ls12v $lm64v
+nop
+nop
+dvpassa $lr72v $nowrite; lpassa $ls0 $nowrite; l1bmd $lm64v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr36 $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr32 $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v $ls24v
+nop
+dvpassa $lr40v $nowrite; lpassa $lr40v $nowrite; l1bmd $lr40v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr72v $lm64v
+nop
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr48 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls4 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls48v
+dvpassa $ls12v $nowrite; lpassa $ls12v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr60 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls36 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr92v
+dvpassa $lr64 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls40 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr92v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr72v $nowrite; lpassa $ls24v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr40v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr52 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls20 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls24v
+dvpassa $ls12v $nowrite; lpassa $ls12v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr56 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls32 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr92v
+dvpassa $lr80 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls44 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr92v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+land $lm32v $lr4 $lr72v $ls24v
+dvpassa $lr8 $nowrite; lpassa $ls56 $nowrite; l1bmd $lm64v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v/$imr1
+dvpassa $ln64 $nowrite; lpassa $lr16 $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa -$lr40v $ln24v; dftoi $mauf $lr84v $ls12v
+lpassa $lr40v $ln24v/$imr2
+land $ls12v $lr68 $omr1
+ladd $ls12v $lr68 $nowrite
+land $aluf $lr12 $omr2
+lsub $ls8 $lr84v $nowrite
+lmax $lr84v $aluf $ls24v
+nop
+ullsr $ls24v $lr20 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $ls48v
+land $ls24v $lr24 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $nowrite
+dvpassa $mauf $nowrite; lpassa $lr0 $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v
+land $ls12v $lr28 $nowrite
+lor $lr40v $aluf $ls12v $lm64v
+nop
+nop
+dvpassa $lr72v $nowrite; lpassa $ls0 $nowrite; l1bmd $lm64v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr36 $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr32 $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v $ls24v
+nop
+dvpassa $lr40v $nowrite; lpassa $lr40v $nowrite; l1bmd $lr40v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr72v $lm64v
+nop
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr48 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls4 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls48v
+dvpassa $ls12v $nowrite; lpassa $ls12v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr60 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls36 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr92v
+dvpassa $lr64 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls40 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr92v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr72v $nowrite; lpassa $ls24v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr40v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr52 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls20 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls24v
+dvpassa $ls12v $nowrite; lpassa $ls12v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr56 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls32 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr92v
+dvpassa $lr80 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls44 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr92v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+land $lm40v $lr4 $lr72v $ls24v
+dvpassa $lr8 $nowrite; lpassa $ls56 $nowrite; l1bmd $lm64v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v/$imr1
+dvpassa $ln64 $nowrite; lpassa $lr16 $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa -$lr40v $ln32v; dftoi $mauf $lr84v $ls12v
+lpassa $lr40v $ln32v/$imr2
+land $ls12v $lr68 $omr1
+ladd $ls12v $lr68 $nowrite
+land $aluf $lr12 $omr2
+lsub $ls8 $lr84v $nowrite
+lmax $lr84v $aluf $ls24v
+nop
+ullsr $ls24v $lr20 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $ls48v
+land $ls24v $lr24 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $nowrite
+dvpassa $mauf $nowrite; lpassa $lr0 $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v
+land $ls12v $lr28 $nowrite
+lor $lr40v $aluf $ls12v $lm64v
+nop
+nop
+dvpassa $lr72v $nowrite; lpassa $ls0 $nowrite; l1bmd $lm64v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr36 $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr32 $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v $ls24v
+nop
+dvpassa $lr40v $nowrite; lpassa $lr40v $nowrite; l1bmd $lr40v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr72v $lm64v
+nop
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr48 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls4 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls48v
+dvpassa $ls12v $nowrite; lpassa $ls12v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr60 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls36 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr92v
+dvpassa $lr64 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls40 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr92v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr72v $nowrite; lpassa $ls24v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr40v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr52 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls20 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls24v
+dvpassa $ls12v $nowrite; lpassa $ls12v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr56 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls32 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr92v
+dvpassa $lr80 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls44 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr92v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+land $lm48v $lr4 $lr72v $ls24v
+dvpassa $lr8 $nowrite; lpassa $ls56 $nowrite; l1bmd $lm64v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v/$imr1
+dvpassa $ln64 $nowrite; lpassa $lr16 $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa -$lr40v $ln40v; dftoi $mauf $lr84v $ls12v
+lpassa $lr40v $ln40v/$imr2
+land $ls12v $lr68 $omr1
+ladd $ls12v $lr68 $nowrite
+land $aluf $lr12 $omr2
+lsub $ls8 $lr84v $nowrite
+lmax $lr84v $aluf $ls24v
+nop
+ullsr $ls24v $lr20 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $ls48v
+land $ls24v $lr24 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $nowrite
+dvpassa $mauf $nowrite; lpassa $lr0 $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v
+land $ls12v $lr28 $nowrite
+lor $lr40v $aluf $ls12v $lm64v
+nop
+nop
+dvpassa $lr72v $nowrite; lpassa $ls0 $nowrite; l1bmd $lm64v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr36 $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr32 $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v $ls24v
+nop
+dvpassa $lr40v $nowrite; lpassa $lr40v $nowrite; l1bmd $lr40v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr72v $lm64v
+nop
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr48 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls4 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls48v
+dvpassa $ls12v $nowrite; lpassa $ls12v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr60 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls36 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr92v
+dvpassa $lr64 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls40 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr92v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr72v $nowrite; lpassa $ls24v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr40v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+dvpassa $lr52 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls20 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls24v
+dvpassa $ls12v $nowrite; lpassa $ls12v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr56 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls32 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr92v
+dvpassa $lr80 $nowrite; lpassa $lm64v $nowrite; l1bmd $ls44 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr92v $nowrite; lpassa $ls12v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr84v
+dvpassa $lr72v $nowrite; lpassa $lr72v $nowrite; l1bmd $lr72v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls12v
+land $lm56v $lr4 $lr72v $ls24v
+dvpassa $lr8 $nowrite; lpassa $ls56 $nowrite; l1bmd $lm64v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr84v $nowrite; l1bmd $ls12v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr40v/$imr1
+dvpassa $ln64 $nowrite; lpassa $lr16 $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa -$lr40v $ln48v; dftoi $mauf $lr84v $ls12v
+lpassa $lr40v $ln48v/$imr2
+land $ls12v $lr68 $omr1
+ladd $ls12v $lr68 $nowrite
+land $aluf $lr12 $omr2
+lsub $ls8 $lr84v $nowrite
+lmax $lr84v $aluf $ls24v
+nop
+ullsr $ls24v $lr20 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $ls48v
+land $ls24v $lr24 $nowrite
+lor $lr0 $aluf $nowrite
+dvadd $aluf -$lr0 $nowrite
+dvpassa $mauf $nowrite; lpassa $lr0 $nowrite; l1bmd $ls48v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr0v
+land $ls12v $lr28 $nowrite
+lor $lr0v $aluf $ls24v $lm0v
+nop
+nop
+dvpassa $lr72v $nowrite; lpassa $ls0 $nowrite; l1bmd $lm0v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr36 $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr32 $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr0v $ls48v
+nop
+dvpassa $lr0v $nowrite; lpassa $lr0v $nowrite; l1bmd $lr0v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr68v $lm0v
+nop
+dvpassa $lr68v $nowrite; lpassa $lr68v $nowrite; l1bmd $lr68v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls24v
+dvpassa $lr48 $nowrite; lpassa $lm0v $nowrite; l1bmd $ls4 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls0v
+dvpassa $ls24v $nowrite; lpassa $ls24v $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr12v
+dvpassa $lr60 $nowrite; lpassa $lm0v $nowrite; l1bmd $ls36 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr12v $nowrite; l1bmd $ls0v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr20v
+dvpassa $lr64 $nowrite; lpassa $lm0v $nowrite; l1bmd $ls40 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr20v $nowrite; lpassa $ls24v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls24v
+dvpassa $lr68v $nowrite; lpassa $ls48v $nowrite; l1bmd $lr68v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr0v $nowrite; lpassa $ls24v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr0v
+dvpassa $lr68v $nowrite; lpassa $lr68v $nowrite; l1bmd $lr68v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls24v
+dvpassa $lr52 $nowrite; lpassa $lm0v $nowrite; l1bmd $ls20 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $ls36v
+dvpassa $ls24v $nowrite; lpassa $ls24v $nowrite; l1bmd $ls24v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $lr60v
+dvpassa $lr56 $nowrite; lpassa $lm0v $nowrite; l1bmd $ls32 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr60v $nowrite; l1bmd $ls36v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr12v
+dvpassa $lr80 $nowrite; lpassa $lm0v $nowrite; l1bmd $ls44 $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $lr12v $nowrite; lpassa $ls24v $nowrite; l1bmd $mauf $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr20v
+dvpassa $lr68v $nowrite; lpassa $lr68v $nowrite; l1bmd $lr68v $lbi
+l1bmd $lbi $nowrite; dvmulu $aluf $mauf $nowrite; lpassa $aluf $nowrite
+dvfmad $aluf $lbf $mauf $ls0v
+dvpassa $lr8 $nowrite; lpassa $ls56 $nowrite; l1bmd $lm0v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $nowrite
+dvpassa $mauf $nowrite; lpassa $lr20v $nowrite; l1bmd $ls0v $lbi
+l1bmd $lbi $nowrite; dvpassa $mauf $nowrite; lpassa $aluf $nowrite; l1bmd $aluf $lbi
+l1bmd $lbi $nowrite; dvfmau $lbf $aluf $mauf $nowrite; lpassa $lbf $nowrite
+dvfmad $aluf $lbf $mauf $lr0v/$imr1
+nop
+dvpassa -$lr0v $ln56v
+lpassa $lr0v $ln56v/$imr2
